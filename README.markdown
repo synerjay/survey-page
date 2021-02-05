@@ -1,4 +1,4 @@
-# Survey Form
+# Survey Form Page
 
 Survey Form collecting comments and suggestions about the overall feel of the website. Practice for form inputs using HTML / CSS.
 
