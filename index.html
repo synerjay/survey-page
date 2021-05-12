@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Quicksand:wght@600&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <div id="main">
+      <div id="header">
+        <h1 id="title">Maple Cafe Survey Form</h1>
+        <p id="description">
+          <i
+            >Thank you for your loyal patronage. Please complete this survey to
+            better serve you.</i
+          >
+        </p>
+      </div>
+
+      <div id="field">
+        <form id="survey-form" method="POST">
+          <label id="name-label" for="name">Name</label><br />
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+          /><br />
+          <label id="email-label" for="email">Email</label><br />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Your email"
+            required
+          /><br />
+          <label id="number-label" for="age">Age</label><br />
+          <input
+            id="number"
+            type="number"
+            name="age"
+            placeholder="Your age"
+            min="18"
+            max="110"
+          /><br />
+          How often do you drink coffee?<br />
+          <select id="dropdown" name="coffee-frequency">
+            <option value="">Please select frequency</option>
+            <option value="Once-per-week">Once per week</option>
+            <option value="More-twice-per-week">
+              More than twice per week
+            </option>
+            <option value="Once-per-day">Once everyday</option>
+            <option value="Multiple-times-day">
+              More than twice everyday
+            </option></select
+          ><br />
+
+          <p>Would you recommend this cafe to a friend?</p>
+          <label for="definitely"
+            ><input
+              id="definitely"
+              value="definitely"
+              type="radio"
+              name="recommend"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label for="maybe"
+            ><input
+              id="maybe"
+              value="maybe"
+              type="radio"
+              name="recommend"
+              class="input-radio"
+            />Maybe</label
+          >
+          <label for="not-sure"
+            ><input
+              id="not-sure"
+              value="not-sure"
+              type="radio"
+              name="recommend"
+              class="input-radio"
+            />Not sure</label
+          ><br />
+          <p>Which coffee from our menu do you drink most often?</p>
+          <select
+            name="mostpopularcoffee"
+            placeholder="Please select frequency"
+          >
+            <option value="">Please select coffee</option>
+            <option value="morningbrew">Morningbrew Coffee</option>
+            <option value="Mochacap">Mocha Cappucino</option>
+            <option value="latte">Latte Americano</option>
+            <option value="espresso">Italian Espresso</option>
+            <option value="icedfrap">Iced Frappucino</option></select
+          ><br />
+          <p>
+            What part of the cafe experience do you like? Please select that
+            apply.
+          </p>
+
+          <label for="coffeeselect"
+            ><input
+              id="coffeeselect"
+              value="coffeeselect"
+              type="checkbox"
+              name="experience"
+              class="input-checkbox"
+              checked
+            />Coffee selection</label
+          >
+          <label for="overallatm"
+            ><input
+              id="overallatm"
+              value="overallatm"
+              type="checkbox"
+              name="experience"
+              class="input-checkbox"
+            />Overall atmposphere</label
+          ><br />
+          <label for="speedyservice"
+            ><input
+              id="speedyservice"
+              value="speedyservice"
+              type="checkbox"
+              name="experience"
+              class="input-checkbox"
+            />Speedy service</label
+          ><br />
+          <label for="overallclean"
+            ><input
+              id="overallclean"
+              value="overallclean"
+              type="checkbox"
+              name="experience"
+              class="input-checkbox"
+            />Overall cleanliness</label
+          ><br />
+          <label for="pastryselect"
+            ><input
+              id="pastryselect"
+              value="pastryselect"
+              type="checkbox"
+              name="experience"
+              class="input-checkbox"
+            />Pastry selection</label
+          ><br />
+          <label for="comfortseat"
+            ><input
+              id="comfortseat"
+              value="comfortseat"
+              type="checkbox"
+              name="experience"
+              class="input-checkbox"
+            />Comfortable seating</label
+          ><br />
+          <label for="enoughseat"
+            ><input
+              id="enoughseat"
+              value="enoughseat"
+              type="checkbox"
+              name="experience"
+              class="input-checkbox"
+            />Enough number of seating</label
+          ><br />
+          <label for="locationcafe"
+            ><input
+              id="locationcafe"
+              value="locationcafe"
+              type="checkbox"
+              name="experience"
+              class="input-checkbox"
+            />Location of the cafe</label
+          ><br />
+          <label for="friendly-staff"
+            ><input
+              id="friendly-staff"
+              value="friendly-staff"
+              type="checkbox"
+              name="experience"
+              class="input-checkbox"
+            />Friendly accomodating staff</label
+          ><br />
+          <label for="wifi-connect"
+            ><input
+              id="wifi-connect"
+              value="wifi-connect"
+              type="checkbox"
+              name="experience"
+              class="input-checkbox"
+            />Wifi connectivity</label
+          ><br />
+
+          <p>
+            What part of the experience would you liked to see improved? Please
+            comment below with your suggestions
+          </p>
+          <textarea
+            rows="5"
+            cols="30"
+            placeholder="Enter your suggestions here"
+          ></textarea
+          ><br />
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
