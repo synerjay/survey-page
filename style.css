@@ -48,9 +48,13 @@ body {
   width: 100%;
 }
 
+input,
+textarea,
 select {
   width: 100%;
-  margin: 2px 0px 10px 0px;
+  /* margin: 2px 0px 10px 0px; */
+  min-height: 30px;
+  border-radius: 10px;
 }
 
 textarea {
