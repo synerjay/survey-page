@@ -65,6 +65,7 @@ label {
   display: inline-block;
   width: 100%;
   float: left;
+  clear: none;
 }
 
 .input-radio,
